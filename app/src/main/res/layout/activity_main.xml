@@ -7,9 +7,9 @@
 
  tools:context="com.wszelaka.project1a.MainActivity">
 
-    <ImageView
-        android:src="@drawable/ocean"
-        android:layout_width="900dp"
-        android:layout_height="900dp"
-        android:scaleType="center"/>
+    <TextView
+        android:text="Oh the possibilities of TextView!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp" />
 </RelativeLayout>
