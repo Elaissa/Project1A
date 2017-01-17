@@ -7,11 +7,9 @@
 
  tools:context="com.wszelaka.project1a.MainActivity">
 
-    <TextView
-        android:text="Happy Birthday Dear Michał Małaj!Please call me now! Happy Birthday To Michał Małaj!"
-        android:background="#B71C1C"
-        android:textColor="#ECEFF1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="45sp"  />
+    <ImageView
+        android:src="@drawable/ocean"
+        android:layout_width="900dp"
+        android:layout_height="900dp"
+        android:scaleType="center"/>
 </RelativeLayout>
