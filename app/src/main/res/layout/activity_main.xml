@@ -8,41 +8,32 @@
  tools:context="com.wszelaka.project1a.MainActivity">
 
 
-
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="@android:color/darker_gray">
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:text="VIP List"
+        <ImageView
+            android:src="@drawable/ocean"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#4CAF50"
-            android:textSize="24sp" />
+            android:scaleType="centerCrop" />
 
         <TextView
-            android:text="Kunal"
+            android:text="You're invited!"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#4CAF50"
-            android:textSize="24sp" />
+            android:textColor="@android:color/white"
+            android:textSize="54sp"
+            android:background="#009688" />
 
         <TextView
-            android:text="Kagure"
-            android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            android:background="#4CAF50"
-            android:textSize="24sp" />
-
-        <TextView
-            android:text="Lyla"
+            android:text="Bonfire at the beach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#4CAF50"
-            android:textSize="24sp" />
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:background="#009688" />
 
     </LinearLayout>
-
