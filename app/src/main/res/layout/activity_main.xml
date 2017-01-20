@@ -8,32 +8,38 @@
  tools:context="com.wszelaka.project1a.MainActivity">
 
 
-    <LinearLayout
+    <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-        <ImageView
-            android:src="@drawable/ocean"
+        <TextView
+            android:text="I’m in this corner"
+            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop" />
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
 
         <TextView
-            android:text="You're invited!"
-            android:layout_width="match_parent"
+            android:text="No, up here"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="54sp"
-            android:background="#009688" />
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
 
         <TextView
-            android:text="Bonfire at the beach"
-            android:layout_width="match_parent"
+            android:text="Wait, I’m here"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="34sp"
-            android:background="#009688" />
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
 
-    </LinearLayout>
+        <TextView
+            android:text="Actually, I’m here"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
