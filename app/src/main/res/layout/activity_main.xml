@@ -1,45 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+final Button button = new Button(this);
+    button.setText("Click to change second line of text");
 
- tools:context="com.wszelaka.project1a.MainActivity">
+    OnClickListener buttonListener = new View.OnClickListener() {
+    boolean clicked = false;
+    int numClicks = 0;
 
+    @Override
+    public void onClick(View v) {
+    if(numClicks > 5) {
+    button.setText("STOP IT");
+    }
+    numClicks++;
+    if(clicked == false){
+    clicked = true;
+    tv2.setText("Text Changed on Button Click");
+    }
+    else
+    {
+    clicked = false;
+    tv2.setText("Click again");
+    }
+    }
+    };
+    button.setOnClickListener(buttonListener);
+    But as I got more familiar with android, I began to understand the value of the xml layouts and implemented buttons like this
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:orientation="vertical">
-
-        <ImageView
-            android:src="@drawable/ocean"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:scaleType="centerCrop"
-            android:layout_marginBottom="8dp" />
-
-        <TextView
-            android:text="You're invited!"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="45sp"
-            android:background="#009688"/>
-
-        <TextView
-            android:text="Bonfire at the beach"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:background="#009688"/>
-
-    </LinearLayout>
+<Button
+    android:id="@+id/button1"
+    android:layout_height = "wrap_content"
+    android:layout_width ="wrap_content"
+    android:text = "lets do this"
+    android:onClick = "DoIt"
+    />
