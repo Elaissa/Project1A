@@ -1,5 +1,4 @@
-layout/activity_main.xml:1
-    */
+*/
     package com.example.android.miwok;
 
     +import android.media.MediaPlayer;
